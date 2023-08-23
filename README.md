@@ -1,2 +1,6 @@
-# UCF-Courses
-A repository for any and all courses I take at UCF
+# UCF Courses
+
+List of all courses:
+
+1. Fall 2023:
+   i. CAP 5415 (Computer Vision)
