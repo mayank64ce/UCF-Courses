@@ -11,6 +11,7 @@ from torch.utils.tensorboard import SummaryWriter
 from ConvNet import ConvNet
 import argparse
 import numpy as np
+import matplotlib.pyplot as plt
 
 
 def train(model, device, train_loader, optimizer, criterion, epoch, batch_size):
@@ -69,13 +70,14 @@ def train(model, device, train_loader, optimizer, criterion, epoch, batch_size):
         # ----------------- YOUR CODE HERE ----------------------
         #
         # Remove NotImplementedError and assign counting function for correct predictions.
-        correct = (pred == target).sum()
+
+        correct += pred.eq(target.view_as(pred)).sum().item()
 
     train_loss = float(np.mean(losses))
     train_acc = correct / ((batch_idx+1) * batch_size)
     print('Train set: Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)\n'.format(
         float(np.mean(losses)), correct, (batch_idx+1) * batch_size,
-        100. * correct / ((batch_idx+1) * batch_size)))
+        100. * train_acc))
     return train_loss, train_acc
 
 
@@ -121,15 +123,15 @@ def test(model, device, test_loader, optimizer, criterion, epoch, batch_size):
             # ----------------- YOUR CODE HERE ----------------------
             #
             # Remove NotImplementedError and assign counting function for correct predictions.
-            correct = (pred == target).sum()
+            correct += pred.eq(target.view_as(pred)).sum().item()
 
     test_loss = float(np.mean(losses))
-    accuracy = 100. * correct / len(test_loader.dataset)
+    test_accuracy = correct / len(test_loader.dataset)
 
     print('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)\n'.format(
-        test_loss, correct, len(test_loader.dataset), accuracy))
+        test_loss, correct, len(test_loader.dataset), 100. * test_accuracy))
 
-    return test_loss, accuracy
+    return test_loss, test_accuracy
 
 
 def run_main(FLAGS):
@@ -139,6 +141,8 @@ def run_main(FLAGS):
     # Set proper device based on cuda availability
     device = torch.device("cuda" if use_cuda else "cpu")
     print("Torch device selected: ", device)
+    print(
+        f"Mode: {FLAGS.mode}, Learning Rate: {FLAGS.learning_rate}, Epochs: {FLAGS.num_epochs}")
 
     # Initialize the model and send to device
     model = ConvNet(FLAGS.mode).to(device)
@@ -177,6 +181,11 @@ def run_main(FLAGS):
                              shuffle=False, num_workers=4)
 
     best_accuracy = 0.0
+    best_epoch = 0.0
+    loss_train = []
+    loss_test = []
+    accuracy_train = []
+    accuracy_test = []
 
     # Run training for n_epochs specified in config
     for epoch in range(1, FLAGS.num_epochs + 1):
@@ -188,8 +197,43 @@ def run_main(FLAGS):
 
         if test_accuracy > best_accuracy:
             best_accuracy = test_accuracy
+            best_epoch = epoch
+
+        loss_train.append(train_loss)
+        accuracy_train.append(train_accuracy)
+        loss_test.append(test_loss)
+        accuracy_test.append(test_accuracy)
+
+    loss_train = np.array(loss_train)
+    accuracy_train = np.array(accuracy_train)
+    loss_test = np.array(loss_test)
+    accuracy_test = np.array(accuracy_test)
+
+    fig = plt.figure(1)
+    epochs = range(1, FLAGS.num_epochs + 1)
+    plt.plot(epochs, loss_train, 'g', label='Training loss')
+    plt.plot(epochs, loss_test, 'b', label='Test loss')
+    plt.title('Model mode: '+str(FLAGS.mode)+' Training and Test Loss')
+    plt.xlabel('Epochs')
+    plt.ylabel('Loss')
+    plt.legend()
+    plt.show()
+    fig.savefig('plots/loss_plot mode: '+str(FLAGS.mode)+'.png')
+
+    fig = plt.figure(2)
+    epochs = range(1, FLAGS.num_epochs + 1)
+    plt.plot(epochs, accuracy_train*100, 'g', label='Training accuracy')
+    plt.plot(epochs, accuracy_test*100, 'b', label='Test accuracy')
+    plt.title('Model mode:'+str(FLAGS.mode) +
+              ' Training and Test Accuracy')
+    plt.xlabel('Epochs')
+    plt.ylabel('Accuracy in %')
+    plt.legend()
+    plt.show()
+    fig.savefig('plots/accuracy_plot mode: '+str(FLAGS.mode)+'.png')
 
     print("accuracy is {:2.2f}".format(best_accuracy))
+    print("convergence epoch is {}".format(best_epoch))
 
     print("Training and evaluation finished")
 

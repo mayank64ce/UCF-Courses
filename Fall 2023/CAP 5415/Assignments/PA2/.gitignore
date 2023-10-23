@@ -1,0 +1,10 @@
+# Exclude specific files
+pa2.slurm
+slurm-114350.out
+test.py
+._PA2
+.vscode
+.conv2dtest.py
+
+# Exclude specific directory
+data/

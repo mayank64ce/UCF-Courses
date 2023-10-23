@@ -25,6 +25,10 @@ class ConvNet(nn.Module):
         # Flatten layers
         self.flatten = nn.Flatten()
 
+        # activations
+        self.sigmoid = nn.Sigmoid()
+        self.relu = nn.ReLU()
+
         # Linear Layers
         self.fc1 = nn.Linear(28*28, hidden_layers1)  # for model 1
         self.fc2 = nn.Linear(40*4*4, hidden_layers1)
@@ -75,8 +79,9 @@ class ConvNet(nn.Module):
         # Uncomment the following return stmt once method implementation is done.
         x = self.flatten(x)
         x = self.fc1(x)
+        x = self.sigmoid(x)
         x = self.fc_out1(x)
-        x = F.sigmoid(x)
+
         return x
 
     # Use two convolutional layers.
@@ -90,16 +95,16 @@ class ConvNet(nn.Module):
 
         x = self.conv1(x)
         x = self.max_pool1(x)
-        x = F.sigmoid(x)
+        x = self.sigmoid(x)
 
         x = self.conv2(x)
         x = self.max_pool2(x)
-        x = F.sigmoid(x)
+        x = self.sigmoid(x)
 
         x = self.flatten(x)
         x = self.fc2(x)
+        x = self.sigmoid(x)
         x = self.fc_out1(x)
-        x = F.sigmoid(x)
 
         return x
 
@@ -113,16 +118,16 @@ class ConvNet(nn.Module):
         # Uncomment the following return stmt once method implementation is done.
         x = self.conv1(x)
         x = self.max_pool1(x)
-        x = F.relu(x)
+        x = self.relu(x)
 
         x = self.conv2(x)
         x = self.max_pool2(x)
-        x = F.relu(x)
+        x = self.relu(x)
 
         x = self.flatten(x)
         x = self.fc2(x)
+        x = self.relu(x)
         x = self.fc_out1(x)
-        x = F.sigmoid(x)
 
         return x
 
@@ -136,17 +141,20 @@ class ConvNet(nn.Module):
         # Uncomment the following return stmt once method implementation is done.
         x = self.conv1(x)
         x = self.max_pool1(x)
-        x = F.relu(x)
+        x = self.relu(x)
 
         x = self.conv2(x)
         x = self.max_pool2(x)
-        x = F.relu(x)
+        x = self.relu(x)
 
         x = self.flatten(x)
         x = self.fc2(x)
+        x = self.relu(x)
+
         x = self.fc3(x)
+        x = self.relu(x)
+
         x = self.fc_out1(x)
-        x = F.sigmoid(x)
 
         return x
 
@@ -162,19 +170,22 @@ class ConvNet(nn.Module):
         # Uncomment the following return stmt once method implementation is done.
         x = self.conv1(x)
         x = self.max_pool1(x)
-        x = F.relu(x)
+        x = self.relu(x)
 
         x = self.conv2(x)
         x = self.max_pool2(x)
-        x = F.relu(x)
+        x = self.relu(x)
 
         x = self.flatten(x)
+
         x = self.fc4(x)
+        x = self.relu(x)
         x = self.dropout(x)
+
         x = self.fc5(x)
+        x = self.relu(x)
         x = self.dropout(x)
+
         x = self.fc_out2(x)
-        x = self.dropout(x)
-        x = F.sigmoid(x)
 
         return x
