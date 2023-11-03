@@ -1,0 +1,37 @@
+Torch device selected:  cuda
+Mode: CNN, Learning Rate: 0.001, Epochs: 10
+Total number of trainable parameters in model = 10657.
+Total number of trainable parameters in encoder = 4800.
+Total number of trainable parameters in decoder = 5857.
+================= Running Epoch : 1 =================
+Train set: Average loss: 0.1092
+Test set: Average loss: 0.0760
+================= Running Epoch : 2 =================
+Train set: Average loss: 0.0711
+Test set: Average loss: 0.0656
+================= Running Epoch : 3 =================
+Train set: Average loss: 0.0639
+Test set: Average loss: 0.0658
+================= Running Epoch : 4 =================
+Train set: Average loss: 0.0595
+Test set: Average loss: 0.0563
+================= Running Epoch : 5 =================
+Train set: Average loss: 0.0565
+Test set: Average loss: 0.0536
+================= Running Epoch : 6 =================
+Train set: Average loss: 0.0542
+Test set: Average loss: 0.0527
+================= Running Epoch : 7 =================
+Train set: Average loss: 0.0527
+Test set: Average loss: 0.0510
+================= Running Epoch : 8 =================
+Train set: Average loss: 0.0516
+Test set: Average loss: 0.0502
+================= Running Epoch : 9 =================
+Train set: Average loss: 0.0507
+Test set: Average loss: 0.0494
+================= Running Epoch : 10 =================
+Train set: Average loss: 0.0499
+Test set: Average loss: 0.0487
+The model converged at epoch number : 10
+Saved weights can be found in saved_weights/model2.pth .

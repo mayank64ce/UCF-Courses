@@ -1,0 +1,619 @@
+2023-10-31 00:16:22,024 INFO    StreamThr :160282 [internal.py:wandb_internal():86] W&B internal server running at pid: 160282, started at: 2023-10-31 00:16:22.023292
+2023-10-31 00:16:22,026 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status
+2023-10-31 00:16:22,028 INFO    WriterThread:160282 [datastore.py:open_for_write():85] open: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/run-ypndpo8j.wandb
+2023-10-31 00:16:22,030 DEBUG   SenderThread:160282 [sender.py:send():380] send: header
+2023-10-31 00:16:22,036 DEBUG   SenderThread:160282 [sender.py:send():380] send: run
+2023-10-31 00:16:22,307 INFO    SenderThread:160282 [dir_watcher.py:__init__():211] watching files in: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files
+2023-10-31 00:16:22,307 INFO    SenderThread:160282 [sender.py:_start_run_threads():1122] run started: ypndpo8j with start time 1698725782.023956
+2023-10-31 00:16:22,314 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: check_version
+2023-10-31 00:16:22,314 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: check_version
+2023-10-31 00:16:22,418 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: run_start
+2023-10-31 00:16:23,373 DEBUG   HandlerThread:160282 [system_info.py:__init__():32] System info init
+2023-10-31 00:16:23,373 DEBUG   HandlerThread:160282 [system_info.py:__init__():47] System info init done
+2023-10-31 00:16:23,373 INFO    HandlerThread:160282 [system_monitor.py:start():194] Starting system monitor
+2023-10-31 00:16:23,374 INFO    SystemMonitor:160282 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-10-31 00:16:23,374 INFO    HandlerThread:160282 [system_monitor.py:probe():214] Collecting system info
+2023-10-31 00:16:23,375 INFO    SystemMonitor:160282 [interfaces.py:start():190] Started cpu monitoring
+2023-10-31 00:16:23,376 INFO    SystemMonitor:160282 [interfaces.py:start():190] Started disk monitoring
+2023-10-31 00:16:23,376 INFO    SystemMonitor:160282 [interfaces.py:start():190] Started gpu monitoring
+2023-10-31 00:16:23,377 INFO    SystemMonitor:160282 [interfaces.py:start():190] Started memory monitoring
+2023-10-31 00:16:23,377 INFO    SystemMonitor:160282 [interfaces.py:start():190] Started network monitoring
+2023-10-31 00:16:23,390 DEBUG   HandlerThread:160282 [system_info.py:probe():196] Probing system
+2023-10-31 00:16:23,393 DEBUG   HandlerThread:160282 [system_info.py:_probe_git():181] Probing git
+2023-10-31 00:16:23,404 DEBUG   HandlerThread:160282 [system_info.py:_probe_git():189] Probing git done
+2023-10-31 00:16:23,404 DEBUG   HandlerThread:160282 [system_info.py:probe():244] Probing system done
+2023-10-31 00:16:23,404 DEBUG   HandlerThread:160282 [system_monitor.py:probe():223] {'os': 'Linux-3.10.0-1127.el7.x86_64-x86_64-with-glibc2.17', 'python': '3.11.5', 'heartbeatAt': '2023-10-31T04:16:23.390351', 'startedAt': '2023-10-31T04:16:22.004361', 'docker': None, 'cuda': None, 'args': ('--mode', 'CNN', '--batch_size', '10', '--epochs', '10', '--learning_rate', '0.001', '--model_save_path', 'model2.pth'), 'state': 'running', 'program': '/lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/train.py', 'codePathLocal': 'train.py', 'codePath': 'Fall 2023/CAP 5415/Assignments/PA3/train.py', 'git': {'remote': 'https://github.com/mayank64ce/UCF-Courses.git', 'commit': '7ce9f6ebeef63fa13426c60c2660c310629f31cb'}, 'email': None, 'root': '/lustre/fs1/home/mkumar/Coursework/UCF-Courses', 'host': 'evc1', 'username': 'mkumar', 'executable': '/home/mkumar/my-envs/assignment/bin/python', 'cpu_count': 32, 'cpu_count_logical': 32, 'cpu_freq': {'current': 3037.2786562499996, 'min': 1000.0, 'max': 3700.0}, 'cpu_freq_per_core': [{'current': 2789.959, 'min': 1000.0, 'max': 3700.0}, {'current': 3453.771, 'min': 1000.0, 'max': 3700.0}, {'current': 3114.624, 'min': 1000.0, 'max': 3700.0}, {'current': 3460.565, 'min': 1000.0, 'max': 3700.0}, {'current': 3217.547, 'min': 1000.0, 'max': 3700.0}, {'current': 3453.771, 'min': 1000.0, 'max': 3700.0}, {'current': 3261.511, 'min': 1000.0, 'max': 3700.0}, {'current': 3453.771, 'min': 1000.0, 'max': 3700.0}, {'current': 3261.511, 'min': 1000.0, 'max': 3700.0}, {'current': 3384.814, 'min': 1000.0, 'max': 3700.0}, {'current': 3261.383, 'min': 1000.0, 'max': 3700.0}, {'current': 3389.428, 'min': 1000.0, 'max': 3700.0}, {'current': 3137.567, 'min': 1000.0, 'max': 3700.0}, {'current': 3381.61, 'min': 1000.0, 'max': 3700.0}, {'current': 3266.253, 'min': 1000.0, 'max': 3700.0}, {'current': 3383.276, 'min': 1000.0, 'max': 3700.0}, {'current': 3131.799, 'min': 1000.0, 'max': 3700.0}, {'current': 2624.359, 'min': 1000.0, 'max': 3700.0}, {'current': 2578.216, 'min': 1000.0, 'max': 3700.0}, {'current': 2802.648, 'min': 1000.0, 'max': 3700.0}, {'current': 2538.61, 'min': 1000.0, 'max': 3700.0}, {'current': 2583.343, 'min': 1000.0, 'max': 3700.0}, {'current': 3109.24, 'min': 1000.0, 'max': 3700.0}, {'current': 2848.663, 'min': 1000.0, 'max': 3700.0}, {'current': 2626.538, 'min': 1000.0, 'max': 3700.0}, {'current': 2828.283, 'min': 1000.0, 'max': 3700.0}, {'current': 2695.495, 'min': 1000.0, 'max': 3700.0}, {'current': 2531.048, 'min': 1000.0, 'max': 3700.0}, {'current': 2621.539, 'min': 1000.0, 'max': 3700.0}, {'current': 2779.577, 'min': 1000.0, 'max': 3700.0}, {'current': 3350.335, 'min': 1000.0, 'max': 3700.0}, {'current': 2329.943, 'min': 1000.0, 'max': 3700.0}], 'disk': {'/': {'total': 163.6466178894043, 'used': 18.63538360595703}}, 'gpu': 'Tesla V100-PCIE-16GB', 'gpu_count': 1, 'gpu_devices': [{'name': 'Tesla V100-PCIE-16GB', 'memory_total': 17179869184}], 'memory': {'total': 187.42809295654297}}
+2023-10-31 00:16:23,404 INFO    HandlerThread:160282 [system_monitor.py:probe():224] Finished collecting system info
+2023-10-31 00:16:23,404 INFO    HandlerThread:160282 [system_monitor.py:probe():227] Publishing system info
+2023-10-31 00:16:23,404 DEBUG   HandlerThread:160282 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-10-31 00:16:23,405 DEBUG   HandlerThread:160282 [system_info.py:_save_pip():68] Saving pip packages done
+2023-10-31 00:16:23,405 DEBUG   HandlerThread:160282 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-10-31 00:16:24,311 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_created():271] file/dir created: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/requirements.txt
+2023-10-31 00:16:24,311 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_created():271] file/dir created: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/conda-environment.yaml
+2023-10-31 00:16:45,190 DEBUG   HandlerThread:160282 [system_info.py:_save_conda():87] Saving conda packages done
+2023-10-31 00:16:45,193 INFO    HandlerThread:160282 [system_monitor.py:probe():229] Finished publishing system info
+2023-10-31 00:16:45,196 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: keepalive
+2023-10-31 00:16:45,197 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:16:45,197 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: keepalive
+2023-10-31 00:16:45,197 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:16:45,197 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: keepalive
+2023-10-31 00:16:45,197 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:16:45,197 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: keepalive
+2023-10-31 00:16:45,197 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:16:45,198 DEBUG   SenderThread:160282 [sender.py:send():380] send: files
+2023-10-31 00:16:45,198 INFO    SenderThread:160282 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-10-31 00:16:45,206 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-31 00:16:45,206 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-31 00:16:45,206 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: stop_status
+2023-10-31 00:16:45,328 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/conda-environment.yaml
+2023-10-31 00:16:45,328 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_created():271] file/dir created: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/wandb-metadata.json
+2023-10-31 00:16:45,329 DEBUG   SenderThread:160282 [sender.py:send():380] send: telemetry
+2023-10-31 00:16:45,626 INFO    wandb-upload_0:160282 [upload_job.py:push():131] Uploaded file /tmp/tmpdtu4mk3iwandb/1tombzjd-wandb-metadata.json
+2023-10-31 00:16:47,330 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_created():271] file/dir created: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/output.log
+2023-10-31 00:16:47,828 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:16:49,332 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/output.log
+2023-10-31 00:16:51,333 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/output.log
+2023-10-31 00:16:52,963 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:16:53,336 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/config.yaml
+2023-10-31 00:16:58,070 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:17:00,207 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-31 00:17:00,207 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-31 00:17:00,207 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: stop_status
+2023-10-31 00:17:03,313 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:17:08,220 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-31 00:17:08,221 DEBUG   SenderThread:160282 [sender.py:send():380] send: history
+2023-10-31 00:17:08,221 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: summary_record
+2023-10-31 00:17:08,223 INFO    SenderThread:160282 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-31 00:17:08,384 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_created():271] file/dir created: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/wandb-summary.json
+2023-10-31 00:17:09,224 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:17:09,385 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/output.log
+2023-10-31 00:17:11,388 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/output.log
+2023-10-31 00:17:14,225 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:17:15,207 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-31 00:17:15,208 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-31 00:17:15,208 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: stop_status
+2023-10-31 00:17:19,296 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:17:23,378 DEBUG   SystemMonitor:160282 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-10-31 00:17:23,379 DEBUG   SenderThread:160282 [sender.py:send():380] send: stats
+2023-10-31 00:17:24,486 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:17:25,258 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-31 00:17:25,259 DEBUG   SenderThread:160282 [sender.py:send():380] send: history
+2023-10-31 00:17:25,260 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: summary_record
+2023-10-31 00:17:25,261 INFO    SenderThread:160282 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-31 00:17:25,443 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/wandb-summary.json
+2023-10-31 00:17:25,444 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/output.log
+2023-10-31 00:17:26,437 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/output.log
+2023-10-31 00:17:30,207 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-31 00:17:30,207 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: stop_status
+2023-10-31 00:17:30,207 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:17:30,209 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-31 00:17:35,332 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:17:40,333 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:17:42,453 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/output.log
+2023-10-31 00:17:42,568 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-31 00:17:42,569 DEBUG   SenderThread:160282 [sender.py:send():380] send: history
+2023-10-31 00:17:42,569 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: summary_record
+2023-10-31 00:17:42,570 INFO    SenderThread:160282 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-31 00:17:43,454 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/wandb-summary.json
+2023-10-31 00:17:44,455 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/output.log
+2023-10-31 00:17:45,207 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-31 00:17:45,208 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: stop_status
+2023-10-31 00:17:45,209 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-31 00:17:46,293 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:17:51,294 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:17:53,380 DEBUG   SenderThread:160282 [sender.py:send():380] send: stats
+2023-10-31 00:17:56,381 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:17:59,824 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-31 00:17:59,825 DEBUG   SenderThread:160282 [sender.py:send():380] send: history
+2023-10-31 00:17:59,825 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: summary_record
+2023-10-31 00:17:59,826 INFO    SenderThread:160282 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-31 00:18:00,218 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-31 00:18:00,223 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: stop_status
+2023-10-31 00:18:00,260 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-31 00:18:00,491 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/wandb-summary.json
+2023-10-31 00:18:00,491 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/output.log
+2023-10-31 00:18:02,311 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:18:07,312 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:18:12,313 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:18:15,290 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-31 00:18:15,291 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: stop_status
+2023-10-31 00:18:15,367 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-31 00:18:16,507 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/output.log
+2023-10-31 00:18:16,836 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-31 00:18:16,836 DEBUG   SenderThread:160282 [sender.py:send():380] send: history
+2023-10-31 00:18:16,837 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: summary_record
+2023-10-31 00:18:16,838 INFO    SenderThread:160282 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-31 00:18:17,508 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/wandb-summary.json
+2023-10-31 00:18:17,839 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:18:18,509 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/output.log
+2023-10-31 00:18:22,840 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:18:23,381 DEBUG   SenderThread:160282 [sender.py:send():380] send: stats
+2023-10-31 00:18:23,434 ERROR   FileStreamThread:160282 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/mayank64ce/PA3%20Model%20training%20in%20CNN%20mode./ypndpo8j/file_stream
+NoneType: None
+2023-10-31 00:18:28,382 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:18:30,282 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-31 00:18:30,282 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-31 00:18:30,283 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: stop_status
+2023-10-31 00:18:33,989 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:18:33,990 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-31 00:18:33,990 DEBUG   SenderThread:160282 [sender.py:send():380] send: history
+2023-10-31 00:18:33,990 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: summary_record
+2023-10-31 00:18:33,993 INFO    SenderThread:160282 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-31 00:18:34,041 ERROR   FileStreamThread:160282 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/mayank64ce/PA3%20Model%20training%20in%20CNN%20mode./ypndpo8j/file_stream
+NoneType: None
+2023-10-31 00:18:34,546 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/wandb-summary.json
+2023-10-31 00:18:34,546 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/output.log
+2023-10-31 00:18:36,548 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/output.log
+2023-10-31 00:18:38,994 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:18:43,995 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:18:45,282 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-31 00:18:45,283 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-31 00:18:45,283 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: stop_status
+2023-10-31 00:18:46,501 ERROR   FileStreamThread:160282 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/mayank64ce/PA3%20Model%20training%20in%20CNN%20mode./ypndpo8j/file_stream
+NoneType: None
+2023-10-31 00:18:49,369 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:18:50,560 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/output.log
+2023-10-31 00:18:51,209 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-31 00:18:51,210 DEBUG   SenderThread:160282 [sender.py:send():380] send: history
+2023-10-31 00:18:51,210 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: summary_record
+2023-10-31 00:18:51,211 INFO    SenderThread:160282 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-31 00:18:51,600 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/wandb-summary.json
+2023-10-31 00:18:52,593 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/output.log
+2023-10-31 00:18:53,381 DEBUG   SenderThread:160282 [sender.py:send():380] send: stats
+2023-10-31 00:18:54,382 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:18:59,384 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:19:00,283 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-31 00:19:00,283 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-31 00:19:00,284 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: stop_status
+2023-10-31 00:19:03,439 ERROR   FileStreamThread:160282 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/mayank64ce/PA3%20Model%20training%20in%20CNN%20mode./ypndpo8j/file_stream
+NoneType: None
+2023-10-31 00:19:04,402 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:19:08,359 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-31 00:19:08,360 DEBUG   SenderThread:160282 [sender.py:send():380] send: history
+2023-10-31 00:19:08,360 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: summary_record
+2023-10-31 00:19:08,362 INFO    SenderThread:160282 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-31 00:19:08,651 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/wandb-summary.json
+2023-10-31 00:19:08,651 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/output.log
+2023-10-31 00:19:10,362 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:19:10,655 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/output.log
+2023-10-31 00:19:15,283 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-31 00:19:15,283 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-31 00:19:15,283 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: stop_status
+2023-10-31 00:19:15,386 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:19:20,386 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:19:20,504 ERROR   FileStreamThread:160282 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/mayank64ce/PA3%20Model%20training%20in%20CNN%20mode./ypndpo8j/file_stream
+NoneType: None
+2023-10-31 00:19:23,382 DEBUG   SenderThread:160282 [sender.py:send():380] send: stats
+2023-10-31 00:19:24,670 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/output.log
+2023-10-31 00:19:25,716 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:19:25,716 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-31 00:19:25,716 DEBUG   SenderThread:160282 [sender.py:send():380] send: history
+2023-10-31 00:19:25,716 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: summary_record
+2023-10-31 00:19:25,719 INFO    SenderThread:160282 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-31 00:19:26,672 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/wandb-summary.json
+2023-10-31 00:19:26,672 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/output.log
+2023-10-31 00:19:30,283 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-31 00:19:30,284 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-31 00:19:30,284 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: stop_status
+2023-10-31 00:19:31,359 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:19:36,360 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:19:36,511 ERROR   FileStreamThread:160282 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/mayank64ce/PA3%20Model%20training%20in%20CNN%20mode./ypndpo8j/file_stream
+NoneType: None
+2023-10-31 00:19:42,003 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:19:42,686 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/output.log
+2023-10-31 00:19:42,876 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-31 00:19:42,876 DEBUG   SenderThread:160282 [sender.py:send():380] send: history
+2023-10-31 00:19:42,876 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: summary_record
+2023-10-31 00:19:42,878 INFO    SenderThread:160282 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-31 00:19:43,009 DEBUG   SenderThread:160282 [sender.py:send():380] send: exit
+2023-10-31 00:19:43,010 INFO    SenderThread:160282 [sender.py:send_exit():585] handling exit code: 0
+2023-10-31 00:19:43,010 INFO    SenderThread:160282 [sender.py:send_exit():587] handling runtime: 200
+2023-10-31 00:19:43,011 INFO    SenderThread:160282 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-31 00:19:43,011 INFO    SenderThread:160282 [sender.py:send_exit():593] send defer
+2023-10-31 00:19:43,011 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: defer
+2023-10-31 00:19:43,012 INFO    HandlerThread:160282 [handler.py:handle_request_defer():172] handle defer: 0
+2023-10-31 00:19:43,012 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: defer
+2023-10-31 00:19:43,012 INFO    SenderThread:160282 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-10-31 00:19:43,012 INFO    SenderThread:160282 [sender.py:transition_state():613] send defer: 1
+2023-10-31 00:19:43,012 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: defer
+2023-10-31 00:19:43,012 INFO    HandlerThread:160282 [handler.py:handle_request_defer():172] handle defer: 1
+2023-10-31 00:19:43,012 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: defer
+2023-10-31 00:19:43,012 INFO    SenderThread:160282 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-10-31 00:19:43,012 INFO    SenderThread:160282 [sender.py:transition_state():613] send defer: 2
+2023-10-31 00:19:43,012 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: defer
+2023-10-31 00:19:43,012 INFO    HandlerThread:160282 [handler.py:handle_request_defer():172] handle defer: 2
+2023-10-31 00:19:43,012 INFO    HandlerThread:160282 [system_monitor.py:finish():203] Stopping system monitor
+2023-10-31 00:19:43,013 DEBUG   SystemMonitor:160282 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-10-31 00:19:43,013 DEBUG   SystemMonitor:160282 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-10-31 00:19:43,013 INFO    HandlerThread:160282 [interfaces.py:finish():202] Joined cpu monitor
+2023-10-31 00:19:43,014 INFO    HandlerThread:160282 [interfaces.py:finish():202] Joined disk monitor
+2023-10-31 00:19:43,081 INFO    HandlerThread:160282 [interfaces.py:finish():202] Joined gpu monitor
+2023-10-31 00:19:43,082 INFO    HandlerThread:160282 [interfaces.py:finish():202] Joined memory monitor
+2023-10-31 00:19:43,082 INFO    HandlerThread:160282 [interfaces.py:finish():202] Joined network monitor
+2023-10-31 00:19:43,082 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: defer
+2023-10-31 00:19:43,082 INFO    SenderThread:160282 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-10-31 00:19:43,082 INFO    SenderThread:160282 [sender.py:transition_state():613] send defer: 3
+2023-10-31 00:19:43,082 DEBUG   SenderThread:160282 [sender.py:send():380] send: stats
+2023-10-31 00:19:43,082 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: defer
+2023-10-31 00:19:43,083 INFO    HandlerThread:160282 [handler.py:handle_request_defer():172] handle defer: 3
+2023-10-31 00:19:43,083 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: defer
+2023-10-31 00:19:43,083 INFO    SenderThread:160282 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-10-31 00:19:43,083 INFO    SenderThread:160282 [sender.py:transition_state():613] send defer: 4
+2023-10-31 00:19:43,083 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: defer
+2023-10-31 00:19:43,083 INFO    HandlerThread:160282 [handler.py:handle_request_defer():172] handle defer: 4
+2023-10-31 00:19:43,083 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: defer
+2023-10-31 00:19:43,083 INFO    SenderThread:160282 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-10-31 00:19:43,083 INFO    SenderThread:160282 [sender.py:transition_state():613] send defer: 5
+2023-10-31 00:19:43,083 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: defer
+2023-10-31 00:19:43,084 INFO    HandlerThread:160282 [handler.py:handle_request_defer():172] handle defer: 5
+2023-10-31 00:19:43,084 DEBUG   SenderThread:160282 [sender.py:send():380] send: summary
+2023-10-31 00:19:43,085 INFO    SenderThread:160282 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-31 00:19:43,085 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: defer
+2023-10-31 00:19:43,085 INFO    SenderThread:160282 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-10-31 00:19:43,085 INFO    SenderThread:160282 [sender.py:transition_state():613] send defer: 6
+2023-10-31 00:19:43,085 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: defer
+2023-10-31 00:19:43,085 INFO    HandlerThread:160282 [handler.py:handle_request_defer():172] handle defer: 6
+2023-10-31 00:19:43,086 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: defer
+2023-10-31 00:19:43,086 INFO    SenderThread:160282 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-10-31 00:19:43,086 INFO    SenderThread:160282 [sender.py:transition_state():613] send defer: 7
+2023-10-31 00:19:43,086 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: status_report
+2023-10-31 00:19:43,086 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: defer
+2023-10-31 00:19:43,086 INFO    HandlerThread:160282 [handler.py:handle_request_defer():172] handle defer: 7
+2023-10-31 00:19:43,086 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: defer
+2023-10-31 00:19:43,086 INFO    SenderThread:160282 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-10-31 00:19:43,688 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/wandb-summary.json
+2023-10-31 00:19:44,012 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-31 00:19:44,462 INFO    SenderThread:160282 [sender.py:transition_state():613] send defer: 8
+2023-10-31 00:19:44,462 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: poll_exit
+2023-10-31 00:19:44,462 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: defer
+2023-10-31 00:19:44,462 INFO    HandlerThread:160282 [handler.py:handle_request_defer():172] handle defer: 8
+2023-10-31 00:19:44,463 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: defer
+2023-10-31 00:19:44,463 INFO    SenderThread:160282 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-10-31 00:19:44,463 INFO    SenderThread:160282 [job_builder.py:build():281] Attempting to build job artifact
+2023-10-31 00:19:44,463 INFO    SenderThread:160282 [job_builder.py:_get_source_type():393] is repo sourced job
+2023-10-31 00:19:44,465 INFO    SenderThread:160282 [job_builder.py:build():369] adding wandb-job metadata file
+2023-10-31 00:19:44,473 INFO    SenderThread:160282 [sender.py:transition_state():613] send defer: 9
+2023-10-31 00:19:44,473 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: defer
+2023-10-31 00:19:44,473 DEBUG   SenderThread:160282 [sender.py:send():380] send: artifact
+2023-10-31 00:19:44,473 INFO    HandlerThread:160282 [handler.py:handle_request_defer():172] handle defer: 9
+2023-10-31 00:19:44,689 INFO    Thread-12 :160282 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/output.log
+2023-10-31 00:19:44,765 ERROR   SenderThread:160282 [internal_api.py:execute():369] 404 response executing GraphQL.
+2023-10-31 00:19:44,765 ERROR   SenderThread:160282 [internal_api.py:execute():370] {"errors":[{"message":"failed to find run PA3 Model training in CNN mode./ypndpo8j","path":["createArtifactManifest"]}],"data":{"createArtifactManifest":null}}
+2023-10-31 00:19:44,767 ERROR   SenderThread:160282 [sender.py:send_artifact():1458] send_artifact: failed for artifact "job/job-https___github.com_mayank64ce_UCF-Courses.git_Fall_2023_CAP_5415_Assignments_PA3_train.py": It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2023-10-31 00:19:44,767 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: defer
+2023-10-31 00:19:44,767 INFO    SenderThread:160282 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-10-31 00:19:44,767 INFO    SenderThread:160282 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-10-31 00:19:45,012 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-31 00:19:45,691 INFO    SenderThread:160282 [dir_watcher.py:finish():388] scan: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files
+2023-10-31 00:19:45,691 INFO    SenderThread:160282 [dir_watcher.py:finish():402] scan save: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/config.yaml config.yaml
+2023-10-31 00:19:45,691 INFO    SenderThread:160282 [dir_watcher.py:finish():402] scan save: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/wandb-summary.json wandb-summary.json
+2023-10-31 00:19:45,691 INFO    SenderThread:160282 [dir_watcher.py:finish():402] scan save: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/output.log output.log
+2023-10-31 00:19:45,693 INFO    SenderThread:160282 [dir_watcher.py:finish():402] scan save: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/conda-environment.yaml conda-environment.yaml
+2023-10-31 00:19:45,697 INFO    SenderThread:160282 [dir_watcher.py:finish():402] scan save: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/requirements.txt requirements.txt
+2023-10-31 00:19:45,697 INFO    SenderThread:160282 [dir_watcher.py:finish():402] scan save: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/wandb-metadata.json wandb-metadata.json
+2023-10-31 00:19:45,698 INFO    SenderThread:160282 [sender.py:transition_state():613] send defer: 10
+2023-10-31 00:19:45,699 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: poll_exit
+2023-10-31 00:19:45,699 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: defer
+2023-10-31 00:19:45,701 INFO    HandlerThread:160282 [handler.py:handle_request_defer():172] handle defer: 10
+2023-10-31 00:19:45,701 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: defer
+2023-10-31 00:19:45,701 INFO    SenderThread:160282 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-10-31 00:19:45,701 INFO    SenderThread:160282 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-31 00:19:45,750 ERROR   wandb-upload_1:160282 [internal_api.py:execute():369] 404 response executing GraphQL.
+2023-10-31 00:19:45,750 ERROR   wandb-upload_1:160282 [internal_api.py:execute():370] {"errors":[{"message":"run PA3 Model training in CNN mode./ypndpo8j not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2023-10-31 00:19:45,750 ERROR   Thread-11 (_thread_body):160282 [step_upload.py:_handle_event():200] Failed to upload file: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/wandb-summary.json
+Traceback (most recent call last):
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 366, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 57, in run
+    self.push()
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2175, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 338, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+                                ^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/util.py", line 906, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2023-10-31 00:19:45,758 ERROR   wandb-upload_0:160282 [internal_api.py:execute():369] 404 response executing GraphQL.
+2023-10-31 00:19:45,784 ERROR   wandb-upload_0:160282 [internal_api.py:execute():370] {"errors":[{"message":"run PA3 Model training in CNN mode./ypndpo8j not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2023-10-31 00:19:45,785 ERROR   Thread-11 (_thread_body):160282 [step_upload.py:_handle_event():200] Failed to upload file: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/config.yaml
+Traceback (most recent call last):
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 366, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 57, in run
+    self.push()
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2175, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 338, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+                                ^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/util.py", line 906, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2023-10-31 00:19:45,936 ERROR   wandb-upload_4:160282 [internal_api.py:execute():369] 404 response executing GraphQL.
+2023-10-31 00:19:45,936 ERROR   wandb-upload_4:160282 [internal_api.py:execute():370] {"errors":[{"message":"run PA3 Model training in CNN mode./ypndpo8j not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2023-10-31 00:19:45,937 ERROR   Thread-11 (_thread_body):160282 [step_upload.py:_handle_event():200] Failed to upload file: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/requirements.txt
+Traceback (most recent call last):
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 366, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 57, in run
+    self.push()
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2175, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 338, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+                                ^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/util.py", line 906, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2023-10-31 00:19:45,938 ERROR   wandb-upload_3:160282 [internal_api.py:execute():369] 404 response executing GraphQL.
+2023-10-31 00:19:45,939 ERROR   wandb-upload_3:160282 [internal_api.py:execute():370] {"errors":[{"message":"run PA3 Model training in CNN mode./ypndpo8j not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2023-10-31 00:19:45,939 ERROR   Thread-11 (_thread_body):160282 [step_upload.py:_handle_event():200] Failed to upload file: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/conda-environment.yaml
+Traceback (most recent call last):
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 366, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 57, in run
+    self.push()
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2175, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 338, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+                                ^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/util.py", line 906, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2023-10-31 00:19:45,941 ERROR   wandb-upload_2:160282 [internal_api.py:execute():369] 404 response executing GraphQL.
+2023-10-31 00:19:45,941 ERROR   wandb-upload_2:160282 [internal_api.py:execute():370] {"errors":[{"message":"run PA3 Model training in CNN mode./ypndpo8j not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2023-10-31 00:19:45,942 ERROR   Thread-11 (_thread_body):160282 [step_upload.py:_handle_event():200] Failed to upload file: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/files/output.log
+Traceback (most recent call last):
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 366, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 288, in run_and_notify
+    self._do_upload_sync(event)
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 57, in run
+    self.push()
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 106, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2175, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 338, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+                                ^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/wandb/util.py", line 906, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2023-10-31 00:19:46,014 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-31 00:19:46,014 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: poll_exit
+2023-10-31 00:19:46,143 INFO    Thread-11 (_thread_body):160282 [sender.py:transition_state():613] send defer: 11
+2023-10-31 00:19:46,143 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: defer
+2023-10-31 00:19:46,143 INFO    HandlerThread:160282 [handler.py:handle_request_defer():172] handle defer: 11
+2023-10-31 00:19:46,144 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: defer
+2023-10-31 00:19:46,144 INFO    SenderThread:160282 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-10-31 00:19:46,144 INFO    SenderThread:160282 [file_pusher.py:join():181] waiting for file pusher
+2023-10-31 00:19:46,144 INFO    SenderThread:160282 [sender.py:transition_state():613] send defer: 12
+2023-10-31 00:19:46,144 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: defer
+2023-10-31 00:19:46,144 INFO    HandlerThread:160282 [handler.py:handle_request_defer():172] handle defer: 12
+2023-10-31 00:19:46,144 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: defer
+2023-10-31 00:19:46,144 INFO    SenderThread:160282 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-10-31 00:19:46,144 INFO    SenderThread:160282 [file_stream.py:finish():595] file stream finish called
+2023-10-31 00:19:46,195 ERROR   FileStreamThread:160282 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/mayank64ce/PA3%20Model%20training%20in%20CNN%20mode./ypndpo8j/file_stream
+NoneType: None
+2023-10-31 00:19:46,246 INFO    SenderThread:160282 [file_stream.py:finish():599] file stream finish is done
+2023-10-31 00:19:46,246 INFO    SenderThread:160282 [sender.py:transition_state():613] send defer: 13
+2023-10-31 00:19:46,246 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: defer
+2023-10-31 00:19:46,246 INFO    HandlerThread:160282 [handler.py:handle_request_defer():172] handle defer: 13
+2023-10-31 00:19:46,247 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: defer
+2023-10-31 00:19:46,247 INFO    SenderThread:160282 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-10-31 00:19:46,247 INFO    SenderThread:160282 [sender.py:transition_state():613] send defer: 14
+2023-10-31 00:19:46,247 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: defer
+2023-10-31 00:19:46,247 DEBUG   SenderThread:160282 [sender.py:send():380] send: final
+2023-10-31 00:19:46,247 INFO    HandlerThread:160282 [handler.py:handle_request_defer():172] handle defer: 14
+2023-10-31 00:19:46,247 DEBUG   SenderThread:160282 [sender.py:send():380] send: footer
+2023-10-31 00:19:46,247 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: defer
+2023-10-31 00:19:46,247 INFO    SenderThread:160282 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-10-31 00:19:46,248 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-31 00:19:46,248 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: poll_exit
+2023-10-31 00:19:46,248 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-31 00:19:46,248 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: poll_exit
+2023-10-31 00:19:46,249 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: server_info
+2023-10-31 00:19:46,249 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: server_info
+2023-10-31 00:19:46,249 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: get_summary
+2023-10-31 00:19:46,251 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: sampled_history
+2023-10-31 00:19:46,251 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-31 00:19:46,251 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: job_info
+2023-10-31 00:19:46,307 DEBUG   SenderThread:160282 [sender.py:send_request():407] send_request: job_info
+2023-10-31 00:19:46,307 INFO    MainThread:160282 [wandb_run.py:_footer_history_summary_info():3599] rendering history
+2023-10-31 00:19:46,308 INFO    MainThread:160282 [wandb_run.py:_footer_history_summary_info():3631] rendering summary
+2023-10-31 00:19:46,308 INFO    MainThread:160282 [wandb_run.py:_footer_sync_info():3558] logging synced files
+2023-10-31 00:19:46,308 DEBUG   HandlerThread:160282 [handler.py:handle_request():146] handle_request: shutdown
+2023-10-31 00:19:46,308 INFO    HandlerThread:160282 [handler.py:finish():866] shutting down handler
+2023-10-31 00:19:47,252 INFO    WriterThread:160282 [datastore.py:close():294] close: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j/run-ypndpo8j.wandb
+2023-10-31 00:19:47,307 INFO    SenderThread:160282 [sender.py:finish():1534] shutting down sender
+2023-10-31 00:19:47,308 INFO    SenderThread:160282 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-31 00:19:47,308 INFO    SenderThread:160282 [file_pusher.py:join():181] waiting for file pusher

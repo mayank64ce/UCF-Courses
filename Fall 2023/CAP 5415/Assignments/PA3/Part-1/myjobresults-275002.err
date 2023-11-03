@@ -1,0 +1,56 @@
+wandb: Currently logged in as: mayank64ce. Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mkumar/.netrc
+wandb: Tracking run with wandb version 0.15.12
+wandb: Run data is saved locally in /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001332-m455pwc5
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run grim-phantom-1
+wandb: ⭐️ View project at https://wandb.ai/mayank64ce/PA3%20Model%20training%20in%20FC%20mode.
+wandb: 🚀 View run at https://wandb.ai/mayank64ce/PA3%20Model%20training%20in%20FC%20mode./runs/m455pwc5
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.005 MB of 0.005 MB uploaded (0.000 MB deduped)wandb: \ 0.005 MB of 0.005 MB uploaded (0.000 MB deduped)wandb: | 0.005 MB of 0.005 MB uploaded (0.000 MB deduped)wandb: / 0.005 MB of 0.005 MB uploaded (0.000 MB deduped)wandb: 
+wandb: Run history:
+wandb:  test_loss █▇▆▃▃▂▃▂▁▂
+wandb: train_loss █▃▂▂▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:  test_loss 0.054
+wandb: train_loss 0.05504
+wandb: 
+wandb: 🚀 View run grim-phantom-1 at: https://wandb.ai/mayank64ce/PA3%20Model%20training%20in%20FC%20mode./runs/m455pwc5
+wandb: ️⚡ View job at https://wandb.ai/mayank64ce/PA3%20Model%20training%20in%20FC%20mode./jobs/QXJ0aWZhY3RDb2xsZWN0aW9uOjExMTQxODIwOA==/version_details/v0
+wandb: Synced 6 W&B file(s), 0 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20231031_001332-m455pwc5/logs
+wandb: Currently logged in as: mayank64ce. Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mkumar/.netrc
+wandb: Tracking run with wandb version 0.15.12
+wandb: Run data is saved locally in /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA3/wandb/run-20231031_001622-ypndpo8j
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run spooky-ghost-2
+wandb: ⭐️ View project at https://wandb.ai/mayank64ce/PA3%20Model%20training%20in%20CNN%20mode.
+wandb: 🚀 View run at https://wandb.ai/mayank64ce/PA3%20Model%20training%20in%20CNN%20mode./runs/ypndpo8j
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: Waiting for W&B process to finish... (success).
+wandb: ERROR Error while calling W&B API: failed to find run PA3 Model training in CNN mode./ypndpo8j (<Response [404]>)
+wandb: - 0.005 MB of 0.005 MB uploaded (0.000 MB deduped)wandb: ERROR Error while calling W&B API: run PA3 Model training in CNN mode./ypndpo8j not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run PA3 Model training in CNN mode./ypndpo8j not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run PA3 Model training in CNN mode./ypndpo8j not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run PA3 Model training in CNN mode./ypndpo8j not found during createRunFiles (<Response [404]>)
+wandb: ERROR Error while calling W&B API: run PA3 Model training in CNN mode./ypndpo8j not found during createRunFiles (<Response [404]>)
+wandb: \ 0.005 MB of 0.011 MB uploaded (0.000 MB deduped)wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: | 0.005 MB of 0.011 MB uploaded (0.000 MB deduped)wandb: 
+wandb: Run history:
+wandb:  test_loss █▅▅▃▂▂▂▁▁▁
+wandb: train_loss █▄▃▂▂▂▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:  test_loss 0.04866
+wandb: train_loss 0.04994
+wandb: 
+wandb: 🚀 View run spooky-ghost-2 at: https://wandb.ai/mayank64ce/PA3%20Model%20training%20in%20CNN%20mode./runs/ypndpo8j
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20231031_001622-ypndpo8j/logs
