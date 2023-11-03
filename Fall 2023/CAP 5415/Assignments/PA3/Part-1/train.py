@@ -104,7 +104,7 @@ def test(model, device, test_loader, optimizer, criterion, epoch, batch_size):
     return test_loss
 
 def main(args):
-    wandb.login(key="1146f36c1130bde7e167e399d39bdce5fcd269dd")
+    wandb.login(key="Your API key here")
     run = wandb.init(
     # Set the project where this run will be logged
     project=f"PA3 Model training in {args.mode} mode.",
