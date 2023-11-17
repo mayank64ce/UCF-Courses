@@ -1,0 +1,217 @@
+{
+    "os": "Linux-3.10.0-1127.el7.x86_64-x86_64-with-glibc2.17",
+    "python": "3.11.5",
+    "heartbeatAt": "2023-11-13T18:12:01.549644",
+    "startedAt": "2023-11-13T18:12:01.098743",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--mode",
+        "1",
+        "--learning_rate",
+        "0.001",
+        "--batch_size",
+        "64",
+        "--num_epochs",
+        "30"
+    ],
+    "state": "running",
+    "program": "/lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "Fall 2023/CAP 5415/Assignments/PA4/train.py",
+    "git": {
+        "remote": "https://github.com/mayank64ce/UCF-Courses.git",
+        "commit": "f5244113f31e0325a2e392dc3942119e0ac20acf"
+    },
+    "email": "mayank_1901ee72@iitp.ac.in",
+    "root": "/lustre/fs1/home/mkumar/Coursework/UCF-Courses",
+    "host": "evc9",
+    "username": "mkumar",
+    "executable": "/home/mkumar/my-envs/assignment/bin/python",
+    "cpu_count": 32,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 2407.1961250000004,
+        "min": 1000.0,
+        "max": 3700.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2853.662,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2365.191,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 1998.999,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 1545.776,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3192.81,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3470.05,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3457.232,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3613.348,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3386.096,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2192.541,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3410.705,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 1772.003,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2282.519,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 1089.733,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 1579.614,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 1978.491,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2810.595,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2658.197,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3083.99,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 1330.7,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2068.083,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 1868.005,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2778.295,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 1490.148,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2577.575,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2299.822,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2968.121,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2594.238,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2960.046,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 1196.63,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2990.936,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2951.971,
+            "min": 1000.0,
+            "max": 3700.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 163.6466178894043,
+            "used": 18.763320922851562
+        }
+    },
+    "gpu": "Tesla V100-PCIE-16GB",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Tesla V100-PCIE-16GB",
+            "memory_total": 17179869184
+        }
+    ],
+    "memory": {
+        "total": 187.42809295654297
+    }
+}

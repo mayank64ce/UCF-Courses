@@ -1,0 +1,97 @@
+Torch device selected:  cuda
+Mode: 2, Learning Rate: 0.001, Epochs: 30
+Files already downloaded and verified
+Files already downloaded and verified
+================= Running Epoch : 1 =================
+Train set: Average loss: 2.3050, Accuracy: 5000/50048 (10%)
+Test set: Average loss: 2.3047, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 2 =================
+Train set: Average loss: 2.3045, Accuracy: 5000/50048 (10%)
+Test set: Average loss: 2.3042, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 3 =================
+Train set: Average loss: 2.3041, Accuracy: 5000/50048 (10%)
+Test set: Average loss: 2.3039, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 4 =================
+Train set: Average loss: 2.3038, Accuracy: 5000/50048 (10%)
+Test set: Average loss: 2.3036, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 5 =================
+Train set: Average loss: 2.3035, Accuracy: 5000/50048 (10%)
+Test set: Average loss: 2.3034, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 6 =================
+Train set: Average loss: 2.3033, Accuracy: 5000/50048 (10%)
+Test set: Average loss: 2.3032, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 7 =================
+Train set: Average loss: 2.3031, Accuracy: 5000/50048 (10%)
+Test set: Average loss: 2.3030, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 8 =================
+Train set: Average loss: 2.3030, Accuracy: 5000/50048 (10%)
+Test set: Average loss: 2.3029, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 9 =================
+Train set: Average loss: 2.3029, Accuracy: 5000/50048 (10%)
+Test set: Average loss: 2.3028, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 10 =================
+Train set: Average loss: 2.3028, Accuracy: 5000/50048 (10%)
+Test set: Average loss: 2.3027, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 11 =================
+Train set: Average loss: 2.3027, Accuracy: 5000/50048 (10%)
+Test set: Average loss: 2.3026, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 12 =================
+Train set: Average loss: 2.3026, Accuracy: 5000/50048 (10%)
+Test set: Average loss: 2.3026, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 13 =================
+Train set: Average loss: 2.3026, Accuracy: 5000/50048 (10%)
+Test set: Average loss: 2.3025, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 14 =================
+Train set: Average loss: 2.3025, Accuracy: 5000/50048 (10%)
+Test set: Average loss: 2.3025, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 15 =================
+Train set: Average loss: 2.3025, Accuracy: 5000/50048 (10%)
+Test set: Average loss: 2.3024, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 16 =================
+Train set: Average loss: 2.3024, Accuracy: 5000/50048 (10%)
+Test set: Average loss: 2.3024, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 17 =================
+Train set: Average loss: 2.3024, Accuracy: 5000/50048 (10%)
+Test set: Average loss: 2.3024, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 18 =================
+Train set: Average loss: 2.3024, Accuracy: 5000/50048 (10%)
+Test set: Average loss: 2.3023, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 19 =================
+Train set: Average loss: 2.3023, Accuracy: 5000/50048 (10%)
+Test set: Average loss: 2.3023, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 20 =================
+Train set: Average loss: 2.3023, Accuracy: 5000/50048 (10%)
+Test set: Average loss: 2.3023, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 21 =================
+Train set: Average loss: 2.3023, Accuracy: 5002/50048 (10%)
+Test set: Average loss: 2.3022, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 22 =================
+Train set: Average loss: 2.3023, Accuracy: 5001/50048 (10%)
+Test set: Average loss: 2.3022, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 23 =================
+Train set: Average loss: 2.3022, Accuracy: 5000/50048 (10%)
+Test set: Average loss: 2.3022, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 24 =================
+Train set: Average loss: 2.3022, Accuracy: 5001/50048 (10%)
+Test set: Average loss: 2.3022, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 25 =================
+Train set: Average loss: 2.3022, Accuracy: 5000/50048 (10%)
+Test set: Average loss: 2.3021, Accuracy: 1002/10000 (10%)
+================= Running Epoch : 26 =================
+Train set: Average loss: 2.3022, Accuracy: 5020/50048 (10%)
+Test set: Average loss: 2.3021, Accuracy: 1007/10000 (10%)
+================= Running Epoch : 27 =================
+Train set: Average loss: 2.3021, Accuracy: 5039/50048 (10%)
+Test set: Average loss: 2.3021, Accuracy: 1030/10000 (10%)
+================= Running Epoch : 28 =================
+Train set: Average loss: 2.3021, Accuracy: 5057/50048 (10%)
+Test set: Average loss: 2.3021, Accuracy: 1034/10000 (10%)
+================= Running Epoch : 29 =================
+Train set: Average loss: 2.3021, Accuracy: 5441/50048 (11%)
+Test set: Average loss: 2.3020, Accuracy: 1035/10000 (10%)
+================= Running Epoch : 30 =================
+Train set: Average loss: 2.3020, Accuracy: 5252/50048 (10%)
+Test set: Average loss: 2.3020, Accuracy: 1046/10000 (10%)
+accuracy is 0.10
+convergence epoch is 30
+Training and evaluation finished

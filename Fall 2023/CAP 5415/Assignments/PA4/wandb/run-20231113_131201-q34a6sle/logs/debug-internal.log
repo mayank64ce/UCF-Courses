@@ -1,0 +1,456 @@
+2023-11-13 13:12:01,110 INFO    StreamThr :85341 [internal.py:wandb_internal():86] W&B internal server running at pid: 85341, started at: 2023-11-13 13:12:01.109282
+2023-11-13 13:12:01,112 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status
+2023-11-13 13:12:01,113 INFO    WriterThread:85341 [datastore.py:open_for_write():85] open: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/run-q34a6sle.wandb
+2023-11-13 13:12:01,115 DEBUG   SenderThread:85341 [sender.py:send():380] send: header
+2023-11-13 13:12:01,122 DEBUG   SenderThread:85341 [sender.py:send():380] send: run
+2023-11-13 13:12:01,442 INFO    SenderThread:85341 [dir_watcher.py:__init__():211] watching files in: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files
+2023-11-13 13:12:01,442 INFO    SenderThread:85341 [sender.py:_start_run_threads():1122] run started: q34a6sle with start time 1699899121.109717
+2023-11-13 13:12:01,446 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: check_version
+2023-11-13 13:12:01,446 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: check_version
+2023-11-13 13:12:01,528 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: run_start
+2023-11-13 13:12:01,534 DEBUG   HandlerThread:85341 [system_info.py:__init__():32] System info init
+2023-11-13 13:12:01,534 DEBUG   HandlerThread:85341 [system_info.py:__init__():47] System info init done
+2023-11-13 13:12:01,534 INFO    HandlerThread:85341 [system_monitor.py:start():194] Starting system monitor
+2023-11-13 13:12:01,535 INFO    SystemMonitor:85341 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-13 13:12:01,535 INFO    HandlerThread:85341 [system_monitor.py:probe():214] Collecting system info
+2023-11-13 13:12:01,536 INFO    SystemMonitor:85341 [interfaces.py:start():190] Started cpu monitoring
+2023-11-13 13:12:01,536 INFO    SystemMonitor:85341 [interfaces.py:start():190] Started disk monitoring
+2023-11-13 13:12:01,537 INFO    SystemMonitor:85341 [interfaces.py:start():190] Started gpu monitoring
+2023-11-13 13:12:01,537 INFO    SystemMonitor:85341 [interfaces.py:start():190] Started memory monitoring
+2023-11-13 13:12:01,538 INFO    SystemMonitor:85341 [interfaces.py:start():190] Started network monitoring
+2023-11-13 13:12:01,549 DEBUG   HandlerThread:85341 [system_info.py:probe():196] Probing system
+2023-11-13 13:12:01,552 DEBUG   HandlerThread:85341 [system_info.py:_probe_git():181] Probing git
+2023-11-13 13:12:01,564 DEBUG   HandlerThread:85341 [system_info.py:_probe_git():189] Probing git done
+2023-11-13 13:12:01,564 DEBUG   HandlerThread:85341 [system_info.py:probe():244] Probing system done
+2023-11-13 13:12:01,565 DEBUG   HandlerThread:85341 [system_monitor.py:probe():223] {'os': 'Linux-3.10.0-1127.el7.x86_64-x86_64-with-glibc2.17', 'python': '3.11.5', 'heartbeatAt': '2023-11-13T18:12:01.549644', 'startedAt': '2023-11-13T18:12:01.098743', 'docker': None, 'cuda': None, 'args': ('--mode', '1', '--learning_rate', '0.001', '--batch_size', '64', '--num_epochs', '30'), 'state': 'running', 'program': '/lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/train.py', 'codePathLocal': 'train.py', 'codePath': 'Fall 2023/CAP 5415/Assignments/PA4/train.py', 'git': {'remote': 'https://github.com/mayank64ce/UCF-Courses.git', 'commit': 'f5244113f31e0325a2e392dc3942119e0ac20acf'}, 'email': 'mayank_1901ee72@iitp.ac.in', 'root': '/lustre/fs1/home/mkumar/Coursework/UCF-Courses', 'host': 'evc9', 'username': 'mkumar', 'executable': '/home/mkumar/my-envs/assignment/bin/python', 'cpu_count': 32, 'cpu_count_logical': 32, 'cpu_freq': {'current': 2407.1961250000004, 'min': 1000.0, 'max': 3700.0}, 'cpu_freq_per_core': [{'current': 2853.662, 'min': 1000.0, 'max': 3700.0}, {'current': 2365.191, 'min': 1000.0, 'max': 3700.0}, {'current': 1998.999, 'min': 1000.0, 'max': 3700.0}, {'current': 1545.776, 'min': 1000.0, 'max': 3700.0}, {'current': 3192.81, 'min': 1000.0, 'max': 3700.0}, {'current': 3470.05, 'min': 1000.0, 'max': 3700.0}, {'current': 3457.232, 'min': 1000.0, 'max': 3700.0}, {'current': 3613.348, 'min': 1000.0, 'max': 3700.0}, {'current': 3386.096, 'min': 1000.0, 'max': 3700.0}, {'current': 2192.541, 'min': 1000.0, 'max': 3700.0}, {'current': 3410.705, 'min': 1000.0, 'max': 3700.0}, {'current': 1772.003, 'min': 1000.0, 'max': 3700.0}, {'current': 2282.519, 'min': 1000.0, 'max': 3700.0}, {'current': 1089.733, 'min': 1000.0, 'max': 3700.0}, {'current': 1579.614, 'min': 1000.0, 'max': 3700.0}, {'current': 1978.491, 'min': 1000.0, 'max': 3700.0}, {'current': 2810.595, 'min': 1000.0, 'max': 3700.0}, {'current': 2658.197, 'min': 1000.0, 'max': 3700.0}, {'current': 3083.99, 'min': 1000.0, 'max': 3700.0}, {'current': 1330.7, 'min': 1000.0, 'max': 3700.0}, {'current': 2068.083, 'min': 1000.0, 'max': 3700.0}, {'current': 1868.005, 'min': 1000.0, 'max': 3700.0}, {'current': 2778.295, 'min': 1000.0, 'max': 3700.0}, {'current': 1490.148, 'min': 1000.0, 'max': 3700.0}, {'current': 2577.575, 'min': 1000.0, 'max': 3700.0}, {'current': 2299.822, 'min': 1000.0, 'max': 3700.0}, {'current': 2968.121, 'min': 1000.0, 'max': 3700.0}, {'current': 2594.238, 'min': 1000.0, 'max': 3700.0}, {'current': 2960.046, 'min': 1000.0, 'max': 3700.0}, {'current': 1196.63, 'min': 1000.0, 'max': 3700.0}, {'current': 2990.936, 'min': 1000.0, 'max': 3700.0}, {'current': 2951.971, 'min': 1000.0, 'max': 3700.0}], 'disk': {'/': {'total': 163.6466178894043, 'used': 18.763320922851562}}, 'gpu': 'Tesla V100-PCIE-16GB', 'gpu_count': 1, 'gpu_devices': [{'name': 'Tesla V100-PCIE-16GB', 'memory_total': 17179869184}], 'memory': {'total': 187.42809295654297}}
+2023-11-13 13:12:01,565 INFO    HandlerThread:85341 [system_monitor.py:probe():224] Finished collecting system info
+2023-11-13 13:12:01,565 INFO    HandlerThread:85341 [system_monitor.py:probe():227] Publishing system info
+2023-11-13 13:12:01,565 DEBUG   HandlerThread:85341 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-11-13 13:12:01,566 DEBUG   HandlerThread:85341 [system_info.py:_save_pip():68] Saving pip packages done
+2023-11-13 13:12:01,566 DEBUG   HandlerThread:85341 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-11-13 13:12:02,444 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_created():271] file/dir created: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/conda-environment.yaml
+2023-11-13 13:12:02,444 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_created():271] file/dir created: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/requirements.txt
+2023-11-13 13:12:03,858 DEBUG   HandlerThread:85341 [system_info.py:_save_conda():87] Saving conda packages done
+2023-11-13 13:12:03,860 INFO    HandlerThread:85341 [system_monitor.py:probe():229] Finished publishing system info
+2023-11-13 13:12:03,871 DEBUG   SenderThread:85341 [sender.py:send():380] send: files
+2023-11-13 13:12:03,871 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-11-13 13:12:03,877 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-13 13:12:03,877 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: stop_status
+2023-11-13 13:12:03,879 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-13 13:12:04,101 DEBUG   SenderThread:85341 [sender.py:send():380] send: telemetry
+2023-11-13 13:12:04,288 INFO    wandb-upload_0:85341 [upload_job.py:push():131] Uploaded file /tmp/tmplskm1k6twandb/tnqxfrvg-wandb-metadata.json
+2023-11-13 13:12:04,445 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/conda-environment.yaml
+2023-11-13 13:12:04,445 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_created():271] file/dir created: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-metadata.json
+2023-11-13 13:12:05,447 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_created():271] file/dir created: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:12:06,461 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:12:07,449 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:12:09,450 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:12:11,888 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:12:16,948 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:12:16,948 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:12:16,949 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:12:16,949 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:12:16,951 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:12:17,457 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:12:17,457 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_created():271] file/dir created: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:12:18,878 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-13 13:12:18,879 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-13 13:12:18,879 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: stop_status
+2023-11-13 13:12:19,459 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:12:22,047 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:12:23,484 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:12:23,566 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:12:23,567 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:12:23,567 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:12:23,568 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:12:24,485 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:12:25,486 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:12:27,570 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:12:29,489 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:12:30,144 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:12:30,145 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:12:30,145 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:12:30,146 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:12:30,490 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:12:31,491 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:12:33,150 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:12:33,494 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/config.yaml
+2023-11-13 13:12:33,878 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-13 13:12:33,879 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-13 13:12:33,879 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: stop_status
+2023-11-13 13:12:36,487 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:12:36,488 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:12:36,488 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:12:36,490 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:12:36,506 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:12:37,506 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:12:38,491 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:12:39,510 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:12:43,283 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:12:43,283 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:12:43,283 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:12:43,285 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:12:43,532 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:12:43,532 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:12:44,285 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:12:45,534 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:12:48,879 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-13 13:12:48,880 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: stop_status
+2023-11-13 13:12:50,061 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:12:50,111 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:12:50,112 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:12:50,112 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:12:50,114 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:12:50,538 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:12:51,539 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:12:55,115 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:12:56,907 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:12:56,907 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:12:56,908 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:12:56,909 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:12:57,544 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:12:57,545 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:12:59,546 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:13:00,910 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:13:01,539 DEBUG   SystemMonitor:85341 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-13 13:13:01,540 DEBUG   SenderThread:85341 [sender.py:send():380] send: stats
+2023-11-13 13:13:03,354 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:13:03,354 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:13:03,355 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:13:03,356 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:13:03,583 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:13:03,583 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:13:03,879 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-13 13:13:03,880 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-13 13:13:03,880 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: stop_status
+2023-11-13 13:13:05,585 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:13:06,028 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:13:10,165 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:13:10,165 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:13:10,166 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:13:10,168 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:13:10,589 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:13:11,169 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:13:11,590 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:13:16,463 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:13:16,721 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:13:16,722 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:13:16,722 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:13:16,723 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:13:17,594 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:13:17,595 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:13:18,879 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-13 13:13:18,880 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-13 13:13:18,880 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: stop_status
+2023-11-13 13:13:19,596 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:13:21,887 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:13:23,155 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:13:23,156 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:13:23,156 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:13:23,157 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:13:23,600 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:13:23,600 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:13:25,601 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:13:27,161 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:13:30,298 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:13:30,298 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:13:30,298 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:13:30,299 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:13:30,607 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:13:31,541 DEBUG   SenderThread:85341 [sender.py:send():380] send: stats
+2023-11-13 13:13:31,608 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:13:32,542 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:13:33,879 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-13 13:13:33,880 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-13 13:13:33,880 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: stop_status
+2023-11-13 13:13:37,345 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:13:37,346 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:13:37,346 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:13:37,348 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:13:37,625 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:13:37,625 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:13:38,348 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:13:39,627 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:13:44,079 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:13:44,418 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:13:44,418 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:13:44,419 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:13:44,420 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:13:44,668 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:13:45,669 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:13:48,880 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-13 13:13:48,881 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: stop_status
+2023-11-13 13:13:49,938 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:13:51,291 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:13:51,292 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:13:51,292 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:13:51,293 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:13:51,679 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:13:51,679 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:13:53,680 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:13:55,295 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:13:58,152 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:13:58,153 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:13:58,153 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:13:58,154 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:13:58,685 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:13:59,686 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:14:01,155 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:14:01,541 DEBUG   SenderThread:85341 [sender.py:send():380] send: stats
+2023-11-13 13:14:03,881 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-13 13:14:03,881 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: stop_status
+2023-11-13 13:14:05,154 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:14:05,155 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:14:05,155 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:14:05,156 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:14:05,692 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:14:05,692 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:14:06,157 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:14:07,693 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:14:11,179 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:14:11,461 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:14:11,462 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:14:11,462 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:14:11,464 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:14:11,710 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:14:11,710 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:14:13,712 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:14:16,465 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:14:18,218 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:14:18,218 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:14:18,218 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:14:18,220 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:14:18,717 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:14:18,881 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-13 13:14:18,881 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: stop_status
+2023-11-13 13:14:19,717 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:14:22,028 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:14:24,515 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:14:24,516 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:14:24,517 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:14:24,522 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:14:24,744 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:14:25,745 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:14:27,523 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:14:30,991 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:14:30,991 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:14:30,991 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:14:30,993 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:14:31,542 DEBUG   SenderThread:85341 [sender.py:send():380] send: stats
+2023-11-13 13:14:31,751 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:14:31,751 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:14:32,543 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:14:33,752 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:14:33,881 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-13 13:14:33,881 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: stop_status
+2023-11-13 13:14:37,720 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:14:37,720 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:14:37,720 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:14:37,721 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:14:37,722 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:14:37,756 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:14:37,756 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:14:39,757 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:14:42,723 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:14:44,011 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:14:44,012 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:14:44,013 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:14:44,014 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:14:44,761 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:14:45,762 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:14:48,015 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:14:48,882 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-13 13:14:48,882 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: stop_status
+2023-11-13 13:14:50,241 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:14:50,241 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:14:50,242 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:14:50,244 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:14:50,768 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:14:51,769 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:14:53,245 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:14:57,105 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:14:57,105 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:14:57,105 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:14:57,107 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:14:57,775 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:14:57,775 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:14:59,108 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:14:59,776 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:15:01,543 DEBUG   SenderThread:85341 [sender.py:send():380] send: stats
+2023-11-13 13:15:03,305 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:15:03,306 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:15:03,306 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:15:03,308 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:15:03,782 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:15:03,782 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:15:03,881 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-13 13:15:03,881 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: stop_status
+2023-11-13 13:15:05,059 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:15:05,784 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:15:09,835 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:15:09,835 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:15:09,836 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:15:09,837 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:15:10,810 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:15:10,838 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:15:11,811 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:15:16,069 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:15:16,069 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:15:16,069 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:15:16,070 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:15:16,072 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:15:16,816 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:15:17,818 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:15:18,882 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-13 13:15:18,882 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: stop_status
+2023-11-13 13:15:22,040 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:15:23,543 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:15:23,544 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:15:23,544 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:15:23,545 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:15:23,833 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:15:23,833 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:15:25,835 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:15:27,547 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:15:30,607 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 13:15:30,608 DEBUG   SenderThread:85341 [sender.py:send():380] send: history
+2023-11-13 13:15:30,608 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 13:15:30,610 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:15:30,825 DEBUG   SenderThread:85341 [sender.py:send():380] send: exit
+2023-11-13 13:15:30,826 INFO    SenderThread:85341 [sender.py:send_exit():585] handling exit code: 0
+2023-11-13 13:15:30,826 INFO    SenderThread:85341 [sender.py:send_exit():587] handling runtime: 209
+2023-11-13 13:15:30,827 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:15:30,827 INFO    SenderThread:85341 [sender.py:send_exit():593] send defer
+2023-11-13 13:15:30,828 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 13:15:30,828 INFO    HandlerThread:85341 [handler.py:handle_request_defer():172] handle defer: 0
+2023-11-13 13:15:30,828 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: defer
+2023-11-13 13:15:30,828 INFO    SenderThread:85341 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-11-13 13:15:30,828 INFO    SenderThread:85341 [sender.py:transition_state():613] send defer: 1
+2023-11-13 13:15:30,828 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 13:15:30,828 INFO    HandlerThread:85341 [handler.py:handle_request_defer():172] handle defer: 1
+2023-11-13 13:15:30,828 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: defer
+2023-11-13 13:15:30,828 INFO    SenderThread:85341 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-11-13 13:15:30,828 INFO    SenderThread:85341 [sender.py:transition_state():613] send defer: 2
+2023-11-13 13:15:30,828 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 13:15:30,829 INFO    HandlerThread:85341 [handler.py:handle_request_defer():172] handle defer: 2
+2023-11-13 13:15:30,829 INFO    HandlerThread:85341 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-13 13:15:30,829 DEBUG   SystemMonitor:85341 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-13 13:15:30,829 DEBUG   SystemMonitor:85341 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-13 13:15:30,830 INFO    HandlerThread:85341 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-13 13:15:30,830 INFO    HandlerThread:85341 [interfaces.py:finish():202] Joined disk monitor
+2023-11-13 13:15:30,840 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:15:30,887 INFO    HandlerThread:85341 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-13 13:15:30,887 INFO    HandlerThread:85341 [interfaces.py:finish():202] Joined memory monitor
+2023-11-13 13:15:30,887 INFO    HandlerThread:85341 [interfaces.py:finish():202] Joined network monitor
+2023-11-13 13:15:30,887 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: defer
+2023-11-13 13:15:30,887 INFO    SenderThread:85341 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-11-13 13:15:30,887 INFO    SenderThread:85341 [sender.py:transition_state():613] send defer: 3
+2023-11-13 13:15:30,887 DEBUG   SenderThread:85341 [sender.py:send():380] send: stats
+2023-11-13 13:15:30,887 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 13:15:30,888 INFO    HandlerThread:85341 [handler.py:handle_request_defer():172] handle defer: 3
+2023-11-13 13:15:30,888 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: defer
+2023-11-13 13:15:30,888 INFO    SenderThread:85341 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-11-13 13:15:30,888 INFO    SenderThread:85341 [sender.py:transition_state():613] send defer: 4
+2023-11-13 13:15:30,888 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 13:15:30,888 INFO    HandlerThread:85341 [handler.py:handle_request_defer():172] handle defer: 4
+2023-11-13 13:15:30,888 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: defer
+2023-11-13 13:15:30,888 INFO    SenderThread:85341 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-11-13 13:15:30,888 INFO    SenderThread:85341 [sender.py:transition_state():613] send defer: 5
+2023-11-13 13:15:30,888 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 13:15:30,888 INFO    HandlerThread:85341 [handler.py:handle_request_defer():172] handle defer: 5
+2023-11-13 13:15:30,889 DEBUG   SenderThread:85341 [sender.py:send():380] send: summary
+2023-11-13 13:15:30,890 INFO    SenderThread:85341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 13:15:30,890 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: defer
+2023-11-13 13:15:30,890 INFO    SenderThread:85341 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-11-13 13:15:30,890 INFO    SenderThread:85341 [sender.py:transition_state():613] send defer: 6
+2023-11-13 13:15:30,891 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 13:15:30,891 INFO    HandlerThread:85341 [handler.py:handle_request_defer():172] handle defer: 6
+2023-11-13 13:15:30,891 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: defer
+2023-11-13 13:15:30,891 INFO    SenderThread:85341 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-11-13 13:15:30,891 INFO    SenderThread:85341 [sender.py:transition_state():613] send defer: 7
+2023-11-13 13:15:30,891 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 13:15:30,891 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 13:15:30,891 INFO    HandlerThread:85341 [handler.py:handle_request_defer():172] handle defer: 7
+2023-11-13 13:15:30,891 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: defer
+2023-11-13 13:15:30,891 INFO    SenderThread:85341 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-11-13 13:15:31,827 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-13 13:15:31,841 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:15:33,025 INFO    SenderThread:85341 [sender.py:transition_state():613] send defer: 8
+2023-11-13 13:15:33,025 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: poll_exit
+2023-11-13 13:15:33,025 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 13:15:33,025 INFO    HandlerThread:85341 [handler.py:handle_request_defer():172] handle defer: 8
+2023-11-13 13:15:33,026 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: defer
+2023-11-13 13:15:33,026 INFO    SenderThread:85341 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-11-13 13:15:33,026 INFO    SenderThread:85341 [job_builder.py:build():281] Attempting to build job artifact
+2023-11-13 13:15:33,026 INFO    SenderThread:85341 [job_builder.py:_get_source_type():393] is repo sourced job
+2023-11-13 13:15:33,028 INFO    SenderThread:85341 [job_builder.py:build():369] adding wandb-job metadata file
+2023-11-13 13:15:33,049 INFO    SenderThread:85341 [sender.py:transition_state():613] send defer: 9
+2023-11-13 13:15:33,050 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 13:15:33,050 DEBUG   SenderThread:85341 [sender.py:send():380] send: artifact
+2023-11-13 13:15:33,050 INFO    HandlerThread:85341 [handler.py:handle_request_defer():172] handle defer: 9
+2023-11-13 13:15:33,478 INFO    SenderThread:85341 [sender.py:send_artifact():1456] sent artifact job-https___github.com_mayank64ce_UCF-Courses.git_Fall_2023_CAP_5415_Assignments_PA4_train.py - {'id': 'QXJ0aWZhY3Q6NjM2OTk1OTM0', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNTM5MDU4MA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjM2OTk1OTM0', 'versionIndex': 0}}}
+2023-11-13 13:15:33,478 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: defer
+2023-11-13 13:15:33,478 INFO    SenderThread:85341 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-11-13 13:15:33,478 INFO    SenderThread:85341 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-11-13 13:15:33,843 INFO    Thread-12 :85341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:15:33,844 INFO    SenderThread:85341 [dir_watcher.py:finish():388] scan: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files
+2023-11-13 13:15:33,844 INFO    SenderThread:85341 [dir_watcher.py:finish():402] scan save: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/config.yaml config.yaml
+2023-11-13 13:15:33,844 INFO    SenderThread:85341 [dir_watcher.py:finish():402] scan save: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json wandb-summary.json
+2023-11-13 13:15:33,845 INFO    SenderThread:85341 [dir_watcher.py:finish():402] scan save: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log output.log
+2023-11-13 13:15:33,847 INFO    SenderThread:85341 [dir_watcher.py:finish():402] scan save: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/conda-environment.yaml conda-environment.yaml
+2023-11-13 13:15:33,850 INFO    SenderThread:85341 [dir_watcher.py:finish():402] scan save: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/requirements.txt requirements.txt
+2023-11-13 13:15:33,852 INFO    SenderThread:85341 [dir_watcher.py:finish():402] scan save: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-metadata.json wandb-metadata.json
+2023-11-13 13:15:33,852 INFO    SenderThread:85341 [sender.py:transition_state():613] send defer: 10
+2023-11-13 13:15:33,852 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 13:15:33,852 INFO    HandlerThread:85341 [handler.py:handle_request_defer():172] handle defer: 10
+2023-11-13 13:15:33,854 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: defer
+2023-11-13 13:15:33,854 INFO    SenderThread:85341 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-11-13 13:15:33,854 INFO    SenderThread:85341 [file_pusher.py:finish():175] shutting down file pusher
+2023-11-13 13:15:34,241 INFO    wandb-upload_1:85341 [upload_job.py:push():131] Uploaded file /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/wandb-summary.json
+2023-11-13 13:15:34,448 INFO    wandb-upload_0:85341 [upload_job.py:push():131] Uploaded file /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/config.yaml
+2023-11-13 13:15:34,481 INFO    wandb-upload_2:85341 [upload_job.py:push():131] Uploaded file /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/output.log
+2023-11-13 13:15:34,594 INFO    wandb-upload_3:85341 [upload_job.py:push():131] Uploaded file /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/conda-environment.yaml
+2023-11-13 13:15:34,604 INFO    wandb-upload_4:85341 [upload_job.py:push():131] Uploaded file /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/files/requirements.txt
+2023-11-13 13:15:34,805 INFO    Thread-11 (_thread_body):85341 [sender.py:transition_state():613] send defer: 11
+2023-11-13 13:15:34,805 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 13:15:34,806 INFO    HandlerThread:85341 [handler.py:handle_request_defer():172] handle defer: 11
+2023-11-13 13:15:34,806 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: defer
+2023-11-13 13:15:34,806 INFO    SenderThread:85341 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-11-13 13:15:34,806 INFO    SenderThread:85341 [file_pusher.py:join():181] waiting for file pusher
+2023-11-13 13:15:34,806 INFO    SenderThread:85341 [sender.py:transition_state():613] send defer: 12
+2023-11-13 13:15:34,806 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 13:15:34,806 INFO    HandlerThread:85341 [handler.py:handle_request_defer():172] handle defer: 12
+2023-11-13 13:15:34,806 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: defer
+2023-11-13 13:15:34,806 INFO    SenderThread:85341 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-11-13 13:15:34,807 INFO    SenderThread:85341 [file_stream.py:finish():595] file stream finish called
+2023-11-13 13:15:35,093 INFO    SenderThread:85341 [file_stream.py:finish():599] file stream finish is done
+2023-11-13 13:15:35,093 INFO    SenderThread:85341 [sender.py:transition_state():613] send defer: 13
+2023-11-13 13:15:35,093 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 13:15:35,093 INFO    HandlerThread:85341 [handler.py:handle_request_defer():172] handle defer: 13
+2023-11-13 13:15:35,093 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: defer
+2023-11-13 13:15:35,094 INFO    SenderThread:85341 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-11-13 13:15:35,094 INFO    SenderThread:85341 [sender.py:transition_state():613] send defer: 14
+2023-11-13 13:15:35,094 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 13:15:35,094 DEBUG   SenderThread:85341 [sender.py:send():380] send: final
+2023-11-13 13:15:35,094 INFO    HandlerThread:85341 [handler.py:handle_request_defer():172] handle defer: 14
+2023-11-13 13:15:35,094 DEBUG   SenderThread:85341 [sender.py:send():380] send: footer
+2023-11-13 13:15:35,094 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: defer
+2023-11-13 13:15:35,094 INFO    SenderThread:85341 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-11-13 13:15:35,095 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-13 13:15:35,095 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: poll_exit
+2023-11-13 13:15:35,095 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: server_info
+2023-11-13 13:15:35,095 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: server_info
+2023-11-13 13:15:35,097 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: get_summary
+2023-11-13 13:15:35,098 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: sampled_history
+2023-11-13 13:15:35,098 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-13 13:15:35,098 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: job_info
+2023-11-13 13:15:35,154 DEBUG   SenderThread:85341 [sender.py:send_request():407] send_request: job_info
+2023-11-13 13:15:35,154 INFO    MainThread:85341 [wandb_run.py:_footer_history_summary_info():3599] rendering history
+2023-11-13 13:15:35,155 INFO    MainThread:85341 [wandb_run.py:_footer_history_summary_info():3631] rendering summary
+2023-11-13 13:15:35,155 INFO    MainThread:85341 [wandb_run.py:_footer_sync_info():3558] logging synced files
+2023-11-13 13:15:35,155 DEBUG   HandlerThread:85341 [handler.py:handle_request():146] handle_request: shutdown
+2023-11-13 13:15:35,155 INFO    HandlerThread:85341 [handler.py:finish():866] shutting down handler
+2023-11-13 13:15:36,101 INFO    WriterThread:85341 [datastore.py:close():294] close: /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/run-q34a6sle.wandb
+2023-11-13 13:15:36,154 INFO    SenderThread:85341 [sender.py:finish():1534] shutting down sender
+2023-11-13 13:15:36,155 INFO    SenderThread:85341 [file_pusher.py:finish():175] shutting down file pusher
+2023-11-13 13:15:36,155 INFO    SenderThread:85341 [file_pusher.py:join():181] waiting for file pusher

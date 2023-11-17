@@ -1,0 +1,29 @@
+2023-11-13 13:12:01,105 INFO    MainThread:85216 [wandb_setup.py:_flush():76] Current SDK version is 0.15.12
+2023-11-13 13:12:01,106 INFO    MainThread:85216 [wandb_setup.py:_flush():76] Configure stats pid to 85216
+2023-11-13 13:12:01,106 INFO    MainThread:85216 [wandb_setup.py:_flush():76] Loading settings from /home/mkumar/.config/wandb/settings
+2023-11-13 13:12:01,106 INFO    MainThread:85216 [wandb_setup.py:_flush():76] Loading settings from /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/settings
+2023-11-13 13:12:01,106 INFO    MainThread:85216 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-11-13 13:12:01,106 INFO    MainThread:85216 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'Fall 2023/CAP 5415/Assignments/PA4/train.py', 'program_abspath': '/lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/train.py', 'program': '/lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/train.py'}
+2023-11-13 13:12:01,106 INFO    MainThread:85216 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2023-11-13 13:12:01,106 INFO    MainThread:85216 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2023-11-13 13:12:01,106 INFO    MainThread:85216 [wandb_init.py:_log_setup():528] Logging user logs to /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/logs/debug.log
+2023-11-13 13:12:01,106 INFO    MainThread:85216 [wandb_init.py:_log_setup():529] Logging internal logs to /lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/wandb/run-20231113_131201-q34a6sle/logs/debug-internal.log
+2023-11-13 13:12:01,106 INFO    MainThread:85216 [wandb_init.py:init():568] calling init triggers
+2023-11-13 13:12:01,106 INFO    MainThread:85216 [wandb_init.py:init():575] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.001, 'epochs': 30, 'mode': 1}
+2023-11-13 13:12:01,106 INFO    MainThread:85216 [wandb_init.py:init():618] starting backend
+2023-11-13 13:12:01,106 INFO    MainThread:85216 [wandb_init.py:init():622] setting up manager
+2023-11-13 13:12:01,108 INFO    MainThread:85216 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-11-13 13:12:01,109 INFO    MainThread:85216 [wandb_init.py:init():628] backend started and connected
+2023-11-13 13:12:01,111 INFO    MainThread:85216 [wandb_init.py:init():720] updated telemetry
+2023-11-13 13:12:01,121 INFO    MainThread:85216 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2023-11-13 13:12:01,446 INFO    MainThread:85216 [wandb_run.py:_on_init():2220] communicating current version
+2023-11-13 13:12:01,524 INFO    MainThread:85216 [wandb_run.py:_on_init():2229] got version response upgrade_message: "wandb version 0.16.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-11-13 13:12:01,524 INFO    MainThread:85216 [wandb_init.py:init():804] starting run threads in backend
+2023-11-13 13:12:03,876 INFO    MainThread:85216 [wandb_run.py:_console_start():2199] atexit reg
+2023-11-13 13:12:03,876 INFO    MainThread:85216 [wandb_run.py:_redirect():2054] redirect: wrap_raw
+2023-11-13 13:12:03,876 INFO    MainThread:85216 [wandb_run.py:_redirect():2119] Wrapping output streams.
+2023-11-13 13:12:03,877 INFO    MainThread:85216 [wandb_run.py:_redirect():2144] Redirects installed.
+2023-11-13 13:12:03,878 INFO    MainThread:85216 [wandb_init.py:init():845] run started, returning control to user process
+2023-11-13 13:15:36,252 WARNING MsgRouterThr:85216 [router.py:message_loop():77] message_loop has been closed

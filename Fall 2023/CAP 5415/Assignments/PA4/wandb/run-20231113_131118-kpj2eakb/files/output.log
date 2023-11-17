@@ -1,0 +1,44 @@
+Torch device selected:  cuda
+Mode: 1, Learning Rate: 0.001, Epochs: 60
+Files already downloaded and verified
+Files already downloaded and verified
+================= Running Epoch : 1 =================
+Train set: Average loss: 2.3042, Accuracy: 5000/50048 (10%)
+Test set: Average loss: 2.3037, Accuracy: 1000/10000 (10%)
+================= Running Epoch : 2 =================
+Traceback (most recent call last):
+  File "/lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/train.py", line 272, in <module>
+    run_main(FLAGS)
+  File "/lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/train.py", line 197, in run_main
+    train_loss, train_accuracy = train(model, device, train_loader,
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lustre/fs1/home/mkumar/Coursework/UCF-Courses/Fall 2023/CAP 5415/Assignments/PA4/train.py", line 39, in train
+    for batch_idx, batch_sample in enumerate(train_loader):
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1328, in _next_data
+    idx, data = self._get_data()
+                ^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1294, in _get_data
+    success, data = self._try_get_data()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1132, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/multiprocessing/queues.py", line 113, in get
+    if not self._poll(timeout):
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/multiprocessing/connection.py", line 256, in poll
+    return self._poll(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/multiprocessing/connection.py", line 423, in _poll
+    r = wait([self], timeout)
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/multiprocessing/connection.py", line 930, in wait
+    ready = selector.select(timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mkumar/my-envs/assignment/lib/python3.11/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
